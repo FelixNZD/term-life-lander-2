@@ -57,12 +57,12 @@ const App = () => {
             </div>
           </header>
 
-          {/* Hero Image */}
+          {/* Hero Image - High quality, safe image of an Australian couple in their 50s/60s */}
           <div className="px-8 sm:px-12 mb-8">
             <div className="relative aspect-video rounded-lg overflow-hidden bg-gray-200 shadow-inner">
               <img 
-                src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=2070&auto=format&fit=crop" 
-                alt="Iconic Australian landscape - Sydney Harbour Bridge and Opera House" 
+                src="https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?q=80&w=2070&auto=format&fit=crop" 
+                alt="Australian couple in their 60s enjoying a peaceful walk outdoors" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
@@ -118,7 +118,7 @@ const App = () => {
                 <p className="text-gray-500 text-sm">Get started in less than 60 seconds.</p>
               </div>
 
-              {/* Leadshook Container - placeholder text removed to reduce initial whitespace */}
+              {/* Leadshook Container */}
               <div 
                 className="quiz-container w-full" 
                 style={{ textAlign: 'center', minHeight: '350px', display: 'block' }} 
@@ -131,7 +131,7 @@ const App = () => {
 
               {/* Security Footer */}
               <div className="text-center mt-4 border-t border-gray-50 pt-4">
-                <p className="text-xs text-gray-400 font-medium">Your information is safe and secure.</p>
+                <p className="text-xs text-gray-400 font-medium uppercase tracking-wider">Your information is safe and secure.</p>
               </div>
             </div>
           </article>
