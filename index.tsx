@@ -25,10 +25,10 @@ const App = () => {
       <nav className="bg-white border-b border-gray-200 py-4 px-6 sticky top-0 z-50">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <span className="text-2xl font-bold tracking-tighter text-blue-900 uppercase">The Aussie Daily</span>
+            <span className="text-2xl font-bold tracking-tighter text-blue-900 uppercase">Smart Cover</span>
           </div>
-          <div className="hidden sm:block">
-            <span className="bg-red-600 text-white text-xs font-bold px-3 py-1 uppercase rounded-sm">
+          <div>
+            <span className="bg-red-600 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1 uppercase rounded-sm whitespace-nowrap">
               Advertorial
             </span>
           </div>
@@ -41,9 +41,12 @@ const App = () => {
           
           {/* Above the Fold */}
           <header className="p-8 sm:p-12 pb-4 text-center sm:text-left">
-            <h1 className="serif-text text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-              How Australians 18 - 70 Can Qualify For Up To $1.5M¹ In Life Insurance (Depending On Your Age)
+            <h1 className="serif-text text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-2">
+              How Australians 18 - 70 Can Qualify For Up To $1.5M¹ In Life Insurance
             </h1>
+            <p className="serif-text text-xl sm:text-2xl text-gray-500 font-medium mb-6">
+              (Depending On Your Age)
+            </p>
             
             <div className="flex flex-wrap items-center justify-center sm:justify-start text-sm text-gray-600 space-x-4 border-y border-gray-100 py-4">
               <div className="flex items-center">
@@ -97,19 +100,30 @@ const App = () => {
             <section className="bg-gray-50 border border-gray-200 rounded-xl p-8 mb-10">
               <h3 className="font-sans text-xl font-bold mb-6 text-gray-900 uppercase tracking-wide border-b border-gray-200 pb-2">Why I used it:</h3>
               <ul className="space-y-4">
-                {[
-                  "Plans can start from $1.97* per fortnight, depending on your age and circumstances.",
-                  "Coverage available up to $1.5 million¹ depending on your age",
-                  "You can get paid out earlier if diagnosed as terminally ill²",
-                  "A simple process to request a quote that takes 60 seconds"
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start font-sans text-base">
-                    <div className="mt-1 bg-green-500 rounded-full p-0.5 mr-3 flex-shrink-0 shadow-sm">
-                      <Check className="w-3.5 h-3.5 text-white" />
-                    </div>
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
+                <li className="flex items-start font-sans text-base">
+                  <div className="mt-1 bg-green-500 rounded-full p-0.5 mr-3 flex-shrink-0 shadow-sm">
+                    <Check className="w-3.5 h-3.5 text-white" />
+                  </div>
+                  <span className="text-gray-700">Plans can start from $1.97* per fortnight, depending on your age and circumstances.</span>
+                </li>
+                <li className="flex items-start font-sans text-base">
+                  <div className="mt-1 bg-green-500 rounded-full p-0.5 mr-3 flex-shrink-0 shadow-sm">
+                    <Check className="w-3.5 h-3.5 text-white" />
+                  </div>
+                  <span className="text-gray-700">Coverage available up to <span className="font-bold text-gray-900">$1.5 million¹ In Life Insurance</span> depending on your age</span>
+                </li>
+                <li className="flex items-start font-sans text-base">
+                  <div className="mt-1 bg-green-500 rounded-full p-0.5 mr-3 flex-shrink-0 shadow-sm">
+                    <Check className="w-3.5 h-3.5 text-white" />
+                  </div>
+                  <span className="text-gray-700">You can get paid out earlier if diagnosed as terminally ill²</span>
+                </li>
+                <li className="flex items-start font-sans text-base">
+                  <div className="mt-1 bg-green-500 rounded-full p-0.5 mr-3 flex-shrink-0 shadow-sm">
+                    <Check className="w-3.5 h-3.5 text-white" />
+                  </div>
+                  <span className="text-gray-700">A simple process to request a quote that takes 60 seconds</span>
+                </li>
               </ul>
             </section>
 
@@ -117,7 +131,7 @@ const App = () => {
             <div id="quiz-anchor" className="bg-white border-4 border-blue-600 rounded-2xl p-4 sm:p-6 font-sans shadow-2xl overflow-hidden block">
               {/* Header */}
               <div className="text-center mb-4">
-                <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-1 uppercase tracking-tight">Request Your Free Quote In 60 Seconds</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-1 uppercase tracking-tight">60-Second Eligibility Check</h2>
                 <p className="text-gray-500 text-sm italic">"See what you qualify for"</p>
               </div>
 
@@ -136,7 +150,7 @@ const App = () => {
         </div>
       </main>
 
-      {/* Updated Footer with all text centered */}
+      {/* Footer */}
       <footer className="bg-white border-t border-gray-200 pt-12 pb-16 px-6 text-gray-500 text-[11px] leading-relaxed text-center">
         <div className="max-w-4xl mx-auto space-y-4">
           <p className="font-bold text-gray-600 mb-6">
@@ -146,19 +160,19 @@ const App = () => {
           <p>Ad, not a real testimonial</p>
           
           <p>
-            *Your actual premium may be different and will depend on your age, gender, smoking status and chosen benefit amount and answers to the underwriting questions as part of your application
+            *Your actual premium may be different and will depend on your age, gender, smoking status and chosen benefit amount and answers to the underwriting questions as part of your application. For a female 18-year-old non-smoker with $100,000 of cover, in their first year accepted at standard rates.
           </p>
           
           <p>
-            1 From $100,000 up to $1,500,000 of cover available (depending on your age). The benefit amount will not be paid if you die or are diagnosed with a Terminal Illness² as a result of an intentional self-inflicted injury or attempted suicide that occurred before the policy commencement date or within the first 13 months of the policy commencement date. Refer to the Product Disclosure Statement for full details.
+            1 From $100,000 up to $1,500,000 of cover available (depending on your age). The benefit amount will not be paid if you die or are diagnosed with a Terminal Illness² as a result of an intentional self-inflicted injury or attempted suicide that occurred before the policy commencement date or within the first 13 months of the policy commencement date. Refer to the <a href="https://www.directcover.com.au/product-disclosure-statement/" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600 transition-colors">Product Disclosure Statement</a> for full details. T&Cs apply.
           </p>
           
           <p>
-            2 Terminal Illness is as defined in the Product Disclosure Statement. Upon payment of a Terminal Illness claim, the policy and cover will end.
+            2 Terminal Illness is as defined in the <a href="https://www.directcover.com.au/product-disclosure-statement/" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600 transition-colors">Product Disclosure Statement (PDS)</a>. Upon payment of a Terminal Illness claim, the policy and cover will end. T&Cs apply.
           </p>
           
           <p className="pt-6 border-t border-gray-100">
-            Smart Cover is a trading name of AXE REVENUE LIMITED. We are not a Life Insurance company and we do not provide Life Insurance cover. AXE REVENUE LIMITED runs a campaign to generate life insurance leads for Direct Cover. Direct Cover is a trading name of Neilson Financial Services Pty Ltd ABN 52 668 314 896, AFSL 552284. Direct Cover products are issued and managed by Direct Cover as agent of the insurer Hallmark Life Insurance Company Ltd ABN 87 008 446 884, AFSL 243469 (Hallmark Life), who underwrites the Direct Cover products. Hallmark Life is part of the St Andrew's Insurance Group. All information and advice provided is only general in nature and it does not consider your objectives, financial situation, or needs. It is important that you make your own decision on whether a product is suitable for you and to seek appropriate independent financial advice. Before making any decisions regarding a Direct Cover product, you should consider the relevant Product Disclosure Statement (PDS), Target Market Determination (TMD) and Financial Services Guide (FSG).
+            Smart Cover is a trading name of AXE REVENUE LIMITED. We are not a Life Insurance company and we do not provide Life Insurance cover. AXE REVENUE LIMITED runs a campaign to generate life insurance leads for Direct Cover. Direct Cover is a trading name of Neilson Financial Services Pty Ltd ABN 52 668 314 896, AFSL 552284. Direct Cover products are issued and managed by Direct Cover as agent of the insurer Hallmark Life Insurance Company Ltd ABN 87 008 446 884, AFSL 243469 (Hallmark Life), who underwrites the Direct Cover products. Hallmark Life is part of the St Andrew's Insurance Group. All information and advice provided is only general in nature and it does not consider your objectives, financial situation, or needs. It is important that you make your own decision on whether a product is suitable for you and to seek appropriate independent financial advice. Before making any decisions regarding a Direct Cover product, you should consider the relevant <a href="https://www.directcover.com.au/product-disclosure-statement/" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600 transition-colors">Product Disclosure Statement (PDS)</a>, <a href="https://www.directcover.com.au/target-market-determination/" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600 transition-colors">Target Market Determination (TMD)</a> and <a href="https://www.directcover.com.au/financial-services-guide/" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600 transition-colors">Financial Services Guide (FSG)</a>. Issuer: Hallmark Life Insurance Company Ltd AFSL 243469.
           </p>
         </div>
       </footer>
