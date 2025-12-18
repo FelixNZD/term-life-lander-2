@@ -42,7 +42,7 @@ const App = () => {
           {/* Above the Fold */}
           <header className="p-8 sm:p-12 pb-4 text-center sm:text-left">
             <h1 className="serif-text text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-2">
-              How Australians 18 - 70 Can Qualify For Up To $1.5M¹ In Life Insurance
+              How Australians 18-70 Can Qualify For Up To $1.5M¹ In Life Insurance
             </h1>
             <p className="serif-text text-lg sm:text-2xl text-gray-500 font-medium mb-6">
               (Depending On Your Age)
@@ -62,20 +62,18 @@ const App = () => {
 
           {/* Hero Section */}
           <div className="px-8 sm:px-12 mb-8">
-            <a href="https://ibb.co/GfqXCfSs" target="_blank" rel="noopener noreferrer" className="block group transition-all duration-300">
-              <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-white group-hover:shadow-xl group-hover:border-blue-200 transition-all">
-                <img 
-                  src="https://i.ibb.co/JW9NrWJx/1766032019785-r67ft12gz9o.png" 
-                  alt="Australian couple enjoying peace of mind" 
-                  className="w-full h-full block object-cover mx-auto"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 text-center sm:text-left">
-                  <p className="text-white serif-text italic text-lg sm:text-xl max-w-2xl leading-snug drop-shadow-md">
-                    "I realized how simple it could be for Aussies like us to get peace of mind for our families." — Frank Thompson
-                  </p>
-                </div>
+            <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-white transition-all">
+              <img 
+                src="https://i.ibb.co/JW9NrWJx/1766032019785-r67ft12gz9o.png" 
+                alt="Australian couple enjoying peace of mind" 
+                className="w-full h-full block object-cover mx-auto"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 text-center sm:text-left">
+                <p className="text-white serif-text italic text-lg sm:text-xl max-w-2xl leading-snug drop-shadow-md">
+                  "I realized how simple it could be for Aussies like us to get peace of mind for our families." — Frank Thompson
+                </p>
               </div>
-            </a>
+            </div>
           </div>
 
           {/* Body Text */}
