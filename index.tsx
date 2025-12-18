@@ -41,10 +41,10 @@ const App = () => {
           
           {/* Above the Fold */}
           <header className="p-8 sm:p-12 pb-4 text-center sm:text-left">
-            <h1 className="serif-text text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-2">
+            <h1 className="serif-text text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-2">
               How Australians 18 - 70 Can Qualify For Up To $1.5M¹ In Life Insurance
             </h1>
-            <p className="serif-text text-xl sm:text-2xl text-gray-500 font-medium mb-6">
+            <p className="serif-text text-lg sm:text-2xl text-gray-500 font-medium mb-6">
               (Depending On Your Age)
             </p>
             
