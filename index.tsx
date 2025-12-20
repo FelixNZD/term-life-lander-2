@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
-import { Check, Clock, User } from 'lucide-react';
+import { Check, Clock, Shield } from 'lucide-react';
 
 const App = () => {
   // Load the Leadshook script on component mount
@@ -54,8 +54,8 @@ const App = () => {
                 <span>30 Second Read</span>
               </div>
               <div className="flex items-center border-l border-gray-200 pl-4">
-                <User className="w-4 h-4 mr-1 text-gray-400" />
-                <span>By Frank Thompson</span>
+                <Shield className="w-4 h-4 mr-1 text-gray-400" />
+                <span>Smart Cover</span>
               </div>
             </div>
           </header>
@@ -70,33 +70,41 @@ const App = () => {
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 text-center sm:text-left">
                 <p className="text-white serif-text italic text-lg sm:text-xl max-w-2xl leading-snug drop-shadow-md">
-                  "I realized how simple it could be for Aussies like us to get peace of mind for our families." — Frank Thompson
+                  Simple and affordable options are available to help Aussies get peace of mind for their families.
                 </p>
               </div>
+            </div>
+            <div className="mt-8 text-center">
+              <a 
+                href="#quiz-anchor" 
+                className="inline-block bg-red-600 hover:bg-red-700 text-white text-xl font-bold py-4 px-8 rounded shadow-lg transition-transform transform hover:scale-105 uppercase tracking-wide"
+              >
+                See If I Qualify
+              </a>
             </div>
           </div>
 
           {/* Body Text */}
           <article className="px-8 sm:px-12 text-gray-900 leading-relaxed text-lg serif-text pb-8">
             <p className="mb-6">
-              I’ll be honest, I never really liked thinking about life insurance. Like most Aussies my age, I just assumed it was either too expensive or too much of a headache to set up. But as I’ve gotten older, and started thinking more about what I’d leave behind for my family, my perspective changed.
+              Many Australians assume that life insurance is either too expensive or too complicated to set up. However, securing financial protection for your family can be a critical step in planning for the future, and it may be more accessible than you think.
             </p>
             <p className="mb-6">
-              Last month, I stumbled across something that caught my eye. It wasn't the usual jargon-heavy bank ad. It was simple. I found out that for many of us, getting covered doesn't have to involve hours of paperwork or invasive medicals - just a few health and lifestyle questions.
+              Finding the right coverage doesn't have to involve hours of paperwork or invasive medical exams to get started. For many people, the process is simple and can involve just a few health and lifestyle questions to request a quote.
             </p>
             <p className="mb-6">
-              In my opinion, the biggest hurdle for people is just not knowing where to start. I found a way to get covered in a way that made sense. It turns out coverage can be surprisingly affordable if you know where to look.
+              The biggest hurdle for most people is simply knowing where to start. Fortunately, there are options designed to be straightforward and surprisingly affordable for everyday Australians.
             </p>
             <p className="mb-6 font-bold text-blue-900 border-l-4 border-blue-600 pl-4 py-1 italic bg-blue-50/50 font-sans">
               Plans can start from $1.97* per fortnight, depending on your age and circumstances.
             </p>
             <p className="mb-8 font-sans text-gray-800">
-              My experience showed me that peace of mind is worth more than the few minutes it takes to request a free quote. It’s about making sure the people you love are taken care of, no matter what happens.
+              Peace of mind comes from knowing that your loved ones are taken care of financially, no matter what happens. Taking a minute to request a free quote can be that first step towards that security.
             </p>
 
             {/* Bullet Points Section */}
             <section className="bg-gray-50 border border-gray-200 rounded-xl p-8 mb-10">
-              <h3 className="font-sans text-xl font-bold mb-6 text-gray-900 uppercase tracking-wide border-b border-gray-200 pb-2">Why I used it:</h3>
+              <h3 className="font-sans text-xl font-bold mb-6 text-gray-900 uppercase tracking-wide border-b border-gray-200 pb-2">Key Benefits:</h3>
               <ul className="space-y-4">
                 <li className="flex items-start font-sans text-base">
                   <div className="mt-1 bg-green-500 rounded-full p-0.5 mr-3 flex-shrink-0 shadow-sm">
@@ -126,11 +134,11 @@ const App = () => {
             </section>
 
             {/* Quiz Module Embed */}
-            <div id="quiz-anchor" className="bg-white border-4 border-blue-600 rounded-2xl p-4 sm:p-6 font-sans shadow-2xl overflow-hidden block">
+            <div id="quiz-anchor" className="scroll-mt-24 bg-white border-4 border-blue-600 rounded-2xl p-4 sm:p-6 font-sans shadow-2xl overflow-hidden block">
               {/* Header */}
               <div className="text-center mb-4">
-                <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-1 uppercase tracking-tight">60-Second Eligibility Check</h2>
-                <p className="text-gray-500 text-sm italic">"See what you qualify for"</p>
+                <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-1 uppercase tracking-tight">Request A Free Quote</h2>
+                <p className="text-gray-500 text-sm italic">"Takes less than 60 seconds"</p>
               </div>
 
               {/* Leadshook Container */}
@@ -154,8 +162,6 @@ const App = () => {
           <p className="font-bold text-gray-600 mb-6">
             © 2025 Smart Cover Official - All Rights Reserved
           </p>
-          
-          <p>Ad, not a real testimonial</p>
           
           <p>
             *Your actual premium may be different and will depend on your age, gender, smoking status and chosen benefit amount and answers to the underwriting questions as part of your application. For a female 18-year-old non-smoker with $100,000 of cover, in their first year accepted at standard rates.
