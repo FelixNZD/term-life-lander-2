@@ -19,6 +19,14 @@ const App = () => {
     };
   }, []);
 
+  const scrollToQuiz = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const element = document.getElementById('quiz-anchor');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
@@ -77,7 +85,8 @@ const App = () => {
             <div className="mt-8 text-center">
               <a 
                 href="#quiz-anchor" 
-                className="inline-block bg-red-600 hover:bg-red-700 text-white text-xl font-bold py-4 px-8 rounded shadow-lg transition-transform transform hover:scale-105 uppercase tracking-wide"
+                onClick={scrollToQuiz}
+                className="inline-block bg-red-600 hover:bg-red-700 text-white text-xl font-bold py-4 px-8 rounded shadow-lg transition-transform transform hover:scale-105 uppercase tracking-wide cursor-pointer"
               >
                 See If I Qualify
               </a>
@@ -134,7 +143,7 @@ const App = () => {
             </section>
 
             {/* Quiz Module Embed */}
-            <div id="quiz-anchor" className="scroll-mt-24 bg-white border-4 border-blue-600 rounded-2xl p-4 sm:p-6 font-sans shadow-2xl overflow-hidden block">
+            <div id="quiz-anchor" className="scroll-mt-32 bg-white border-4 border-blue-600 rounded-2xl p-4 sm:p-6 font-sans shadow-2xl overflow-hidden block">
               {/* Header */}
               <div className="text-center mb-4">
                 <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-1 uppercase tracking-tight">Request A Free Quote</h2>
