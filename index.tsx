@@ -11,6 +11,14 @@ const App = () => {
     }
   };
 
+  // Get current date in EST (New York)
+  const formattedDate = new Date().toLocaleDateString('en-US', {
+    timeZone: 'America/New_York',
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric'
+  });
+
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
@@ -49,6 +57,10 @@ const App = () => {
               <div className="flex items-center border-l border-gray-200 pl-4">
                 <Shield className="w-4 h-4 mr-1 text-gray-400" />
                 <span>Smart Cover</span>
+              </div>
+              <div className="flex items-center border-l border-gray-200 pl-4">
+                <span className="text-gray-400 mr-1 italic">Updated:</span>
+                <span className="font-medium text-gray-800">{formattedDate}</span>
               </div>
             </div>
           </header>
