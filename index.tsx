@@ -57,7 +57,7 @@ const App = () => {
           <div className="px-8 sm:px-12 mb-8">
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-white transition-all">
               <img
-                src="./hero_couple.png"
+                src="/hero_couple.png"
                 alt="Happy older Caucasian couple sitting on a sofa and looking at a smartphone together"
                 className="w-full h-full block object-cover mx-auto"
               />
