@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Check, Clock, Shield } from 'lucide-react';
 
@@ -18,6 +18,25 @@ const App = () => {
     day: 'numeric',
     year: 'numeric'
   });
+
+  const [quizStep, setQuizStep] = useState(1);
+  const affiliateLink = "https://example.com/your-affiliate-link";
+
+  const handleQuizChoice = (answer: string) => {
+    if (quizStep === 1) {
+      if (answer === 'yes') {
+        setQuizStep(2);
+      } else {
+        alert("Sorry, this offer is only available for USA residents.");
+      }
+    } else if (quizStep === 2) {
+      if (answer === 'yes') {
+        window.open(affiliateLink, '_blank', 'noopener,noreferrer');
+      } else {
+        alert("Sorry, you must be between 35-60 to qualify for this specific offer.");
+      }
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
@@ -81,9 +100,8 @@ const App = () => {
             </div>
             <div className="mt-8 text-center">
               <a
-                href="https://example.com/your-affiliate-link"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#quiz-anchor"
+                onClick={scrollToQuiz}
                 className="inline-block bg-red-600 hover:bg-red-700 text-white text-xl font-bold py-4 px-8 rounded shadow-lg transition-transform transform hover:scale-105 uppercase tracking-wide cursor-pointer"
               >
                 Check My Eligibility
@@ -152,22 +170,47 @@ const App = () => {
               </p>
             </section>
 
-            {/* CTA Section */}
-            <div id="quiz-anchor" className="scroll-mt-32 bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-8 sm:p-12 font-sans shadow-2xl overflow-hidden block text-center">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2 uppercase tracking-tight">Ready To See Your Options?</h2>
-              <p className="text-blue-200 text-base mb-6">Find out if you qualify for affordable term life coverage in under 60 seconds.</p>
-
-              <a
-                href="https://example.com/your-affiliate-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-green-500 hover:bg-green-600 text-white text-xl sm:text-2xl font-bold py-5 px-10 sm:px-16 rounded-lg shadow-xl transition-all transform hover:scale-105 uppercase tracking-wide"
-              >
-                Check My Eligibility
-              </a>
-
-              <p className="text-blue-300 text-xs mt-6 italic">
-                *No obligation. Compare quotes from top-rated insurers.
+            {/* CTA Section - Quiz */}
+            <div id="quiz-anchor" className="scroll-mt-32 bg-white border-2 border-blue-200 rounded-2xl p-8 sm:p-12 font-sans shadow-2xl overflow-hidden block text-center min-h-[300px] flex flex-col justify-center">
+              {quizStep === 1 ? (
+                <>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 uppercase tracking-tight">Step 1: Do you live in the USA?</h2>
+                  <div className="flex flex-col sm:flex-row justify-center gap-4">
+                    <button
+                      onClick={() => handleQuizChoice('yes')}
+                      className="bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold py-4 px-12 rounded-lg shadow-lg transition-all transform hover:scale-105 uppercase tracking-wide"
+                    >
+                      Yes
+                    </button>
+                    <button
+                      onClick={() => handleQuizChoice('no')}
+                      className="bg-gray-200 hover:bg-gray-300 text-gray-700 text-xl font-bold py-4 px-12 rounded-lg shadow-md transition-all uppercase tracking-wide"
+                    >
+                      No
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 uppercase tracking-tight">Step 2: Are you between 35-60?</h2>
+                  <div className="flex flex-col sm:flex-row justify-center gap-4">
+                    <button
+                      onClick={() => handleQuizChoice('yes')}
+                      className="bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold py-4 px-12 rounded-lg shadow-lg transition-all transform hover:scale-105 uppercase tracking-wide"
+                    >
+                      Yes
+                    </button>
+                    <button
+                      onClick={() => handleQuizChoice('no')}
+                      className="bg-gray-200 hover:bg-gray-300 text-gray-700 text-xl font-bold py-4 px-12 rounded-lg shadow-md transition-all uppercase tracking-wide"
+                    >
+                      No
+                    </button>
+                  </div>
+                </>
+              )}
+              <p className="text-gray-400 text-xs mt-8 italic">
+                Find out if you qualify for affordable term life coverage in under 60 seconds.
               </p>
             </div>
           </article>
