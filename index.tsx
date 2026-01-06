@@ -81,8 +81,9 @@ const App = () => {
             </div>
             <div className="mt-8 text-center">
               <a
-                href="#quiz-anchor"
-                onClick={scrollToQuiz}
+                href="https://example.com/your-affiliate-link"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-red-600 hover:bg-red-700 text-white text-xl font-bold py-4 px-8 rounded shadow-lg transition-transform transform hover:scale-105 uppercase tracking-wide cursor-pointer"
               >
                 Check My Eligibility
