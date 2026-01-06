@@ -60,7 +60,7 @@ const App = () => {
           <div className="px-8 sm:px-12 mb-8">
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-white transition-all">
               <img
-                src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=1200&h=675&fit=crop"
+                src="https://images.unsplash.com/photo-1556740758-90de374c12ad?w=1200&h=675&fit=crop&crop=faces"
                 alt="Happy American family enjoying financial peace of mind"
                 className="w-full h-full block object-cover mx-auto"
               />
@@ -101,6 +101,35 @@ const App = () => {
             <p className="mb-8 font-sans text-gray-800">
               Peace of mind comes from knowing that your loved ones are taken care of financially, no matter what happens. Taking a minute to request a free quote can be that first step towards that security.
             </p>
+
+            {/* Term vs Whole Life Section */}
+            <section className="bg-amber-50 border border-amber-200 rounded-xl p-8 mb-10">
+              <h3 className="font-sans text-xl font-bold mb-4 text-amber-900">Why Term Life Insurance Over Whole Life?</h3>
+              <p className="font-sans text-gray-700 mb-4">
+                When it comes to protecting your family, <strong>term life insurance</strong> is often the smarter choice for most Americans. Here's why:
+              </p>
+              <ul className="space-y-3 font-sans text-gray-700 mb-4">
+                <li className="flex items-start">
+                  <span className="text-amber-600 mr-2 font-bold">✓</span>
+                  <span><strong>Significantly lower premiums</strong> — Term life can cost 5-15x less than whole life for the same coverage amount</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-600 mr-2 font-bold">✓</span>
+                  <span><strong>Higher coverage amounts</strong> — Get more protection for your budget when your family needs it most</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-600 mr-2 font-bold">✓</span>
+                  <span><strong>Simple and straightforward</strong> — No complicated cash value components or investment features to manage</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-600 mr-2 font-bold">✓</span>
+                  <span><strong>Coverage when you need it</strong> — Protect your family during your highest-earning years when dependents rely on your income</span>
+                </li>
+              </ul>
+              <p className="font-sans text-gray-600 text-sm italic">
+                For most families, term life provides the protection they need at a price they can afford—allowing them to invest the savings elsewhere.
+              </p>
+            </section>
 
             {/* Use Cases Section */}
             <section className="bg-blue-50 border border-blue-200 rounded-xl p-8 mb-10">
