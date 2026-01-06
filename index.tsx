@@ -17,7 +17,7 @@ const App = () => {
       <nav className="bg-white border-b border-gray-200 py-4 px-6 sticky top-0 z-50">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <span className="text-2xl font-bold tracking-tighter text-blue-900 uppercase">Term Life Guide</span>
+            <span className="text-2xl font-bold tracking-tighter text-blue-900 uppercase">Smart Cover</span>
           </div>
           <div>
             <span className="bg-red-600 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1 uppercase rounded-sm whitespace-nowrap">
@@ -51,7 +51,7 @@ const App = () => {
               </div>
               <div className="flex items-center border-l border-gray-200 pl-4">
                 <Shield className="w-4 h-4 mr-1 text-gray-400" />
-                <span>Term Life Guide</span>
+                <span>Smart Cover</span>
               </div>
             </div>
           </header>
@@ -60,7 +60,7 @@ const App = () => {
           <div className="px-8 sm:px-12 mb-8">
             <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-white transition-all">
               <img
-                src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=1200&h=675&fit=crop"
+                src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=1200&h=675&fit=crop"
                 alt="Happy American family enjoying financial peace of mind"
                 className="w-full h-full block object-cover mx-auto"
               />
@@ -168,7 +168,7 @@ const App = () => {
       <footer className="bg-white border-t border-gray-200 pt-12 pb-16 px-6 text-gray-500 text-[11px] leading-relaxed text-center">
         <div className="max-w-4xl mx-auto space-y-4">
           <p className="font-bold text-gray-600 mb-6">
-            © 2025 Term Life Guide - All Rights Reserved
+            © 2026 Smart Cover - All Rights Reserved
           </p>
 
           <p>
