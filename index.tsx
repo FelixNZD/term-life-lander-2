@@ -37,12 +37,9 @@ const App = () => {
               <span className="text-2xl mr-2">🇺🇸</span>
               <span className="text-sm text-gray-500 font-medium uppercase tracking-wide">United States</span>
             </div>
-            <h1 className="serif-text text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-2">
-              Americans 35-60 May Now Qualify For Up To $500,000 In Term Life Insurance
+            <h1 className="serif-text text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+              Americans 35-60 May Now Qualify For Up To $2 Million In Term Life Insurance
             </h1>
-            <p className="serif-text text-lg sm:text-2xl text-gray-500 font-medium mb-6">
-              Starting As Low As $21/Month*
-            </p>
 
             <div className="flex flex-wrap items-center justify-center sm:justify-start text-sm text-gray-600 space-x-4 border-y border-gray-100 py-4">
               <div className="flex items-center">
@@ -98,8 +95,8 @@ const App = () => {
             <p className="mb-2 text-xs text-gray-500 font-sans italic">
               *Sample rates based on 30 yr. old female, non-tobacco, 10-year term.
             </p>
-            <p className="mb-8 font-sans text-gray-800">
-              Peace of mind comes from knowing that your loved ones are taken care of financially, no matter what happens. Taking a minute to request a free quote can be that first step towards that security.
+            <p className="mb-8 font-sans text-gray-800 text-left text-lg">
+              It only takes a minute to request a free quote and see what coverage options are available for you and your family 👇
             </p>
 
             {/* Bullet Points Section */}
