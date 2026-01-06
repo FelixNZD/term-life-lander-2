@@ -172,6 +172,7 @@ const App = () => {
 
             {/* CTA Section - Quiz */}
             <div id="quiz-anchor" className="scroll-mt-32 bg-white border-4 border-blue-600 rounded-2xl p-8 sm:p-12 font-sans shadow-2xl overflow-hidden block text-center min-h-[300px] flex flex-col justify-center">
+              <p className="text-blue-600 font-bold uppercase tracking-wider mb-2 text-sm">Check Your Eligibility Below:</p>
               {quizStep === 1 ? (
                 <>
                   <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 uppercase tracking-tight">Step 1: Do you live in the USA?</h2>
