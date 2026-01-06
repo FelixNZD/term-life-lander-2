@@ -36,11 +36,11 @@ const App = () => {
       </nav>
 
       {/* Main Content Area */}
-      <main className="flex-grow pt-8 pb-16 px-4">
+      <main className="flex-grow pt-4 pb-16 px-4">
         <div className="article-container rounded-lg overflow-hidden">
 
           {/* Above the Fold */}
-          <header className="p-8 sm:p-12 pb-4 text-center sm:text-left">
+          <header className="p-6 sm:px-12 sm:pt-8 sm:pb-4 text-center sm:text-left">
             <div className="flex items-center justify-center sm:justify-start mb-4">
               <span className="text-2xl mr-2">🇺🇸</span>
               <span className="text-sm text-gray-500 font-medium uppercase tracking-wide">United States</span>
