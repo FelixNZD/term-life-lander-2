@@ -102,6 +102,40 @@ const App = () => {
               Peace of mind comes from knowing that your loved ones are taken care of financially, no matter what happens. Taking a minute to request a free quote can be that first step towards that security.
             </p>
 
+            {/* Use Cases Section */}
+            <section className="bg-blue-50 border border-blue-200 rounded-xl p-8 mb-10">
+              <h3 className="font-sans text-xl font-bold mb-4 text-blue-900">What Can A Life Insurance Payout Be Used For?</h3>
+              <p className="font-sans text-gray-700 mb-4">
+                A term life insurance payout gives your loved ones the financial flexibility they need during a difficult time. Here's how families typically use these funds:
+              </p>
+              <ul className="space-y-3 font-sans text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2 font-bold">•</span>
+                  <span><strong>Pay off the mortgage</strong> — so your family can stay in their home without worrying about monthly payments</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2 font-bold">•</span>
+                  <span><strong>Cover daily living expenses</strong> — groceries, utilities, car payments, and other bills</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2 font-bold">•</span>
+                  <span><strong>Fund your children's education</strong> — from college tuition to private school fees</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2 font-bold">•</span>
+                  <span><strong>Replace lost income</strong> — helping your spouse maintain their standard of living</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2 font-bold">•</span>
+                  <span><strong>Pay off debts</strong> — credit cards, car loans, medical bills, or other outstanding balances</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-blue-600 mr-2 font-bold">•</span>
+                  <span><strong>Cover final expenses</strong> — funeral costs and other end-of-life arrangements</span>
+                </li>
+              </ul>
+            </section>
+
             {/* Bullet Points Section */}
             <section className="bg-gray-50 border border-gray-200 rounded-xl p-8 mb-10">
               <h3 className="font-sans text-xl font-bold mb-6 text-gray-900 uppercase tracking-wide border-b border-gray-200 pb-2">Why Americans Are Choosing Term Life:</h3>
