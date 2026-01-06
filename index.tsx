@@ -46,7 +46,7 @@ const App = () => {
               <span className="text-sm text-gray-500 font-medium uppercase tracking-wide">United States</span>
             </div>
             <h1 className="serif-text text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-              Americans 35-60 May Now Qualify For Up To $2 Million In Term Life Insurance
+              Americans 35-60 May Now Qualify For Up To <span className="text-blue-800">$2 Million</span> In Term Life Insurance
             </h1>
 
             <div className="flex flex-wrap items-center justify-center sm:justify-start text-sm text-gray-600 space-x-4 border-y border-gray-100 py-4">
