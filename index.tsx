@@ -73,7 +73,7 @@ const App = () => {
                 onClick={scrollToQuiz}
                 className="inline-block bg-red-600 hover:bg-red-700 text-white text-xl font-bold py-4 px-8 rounded shadow-lg transition-transform transform hover:scale-105 uppercase tracking-wide cursor-pointer"
               >
-                Check My Rate
+                Check My Eligibility
               </a>
             </div>
           </div>
@@ -150,7 +150,7 @@ const App = () => {
                 rel="noopener noreferrer"
                 className="inline-block bg-green-500 hover:bg-green-600 text-white text-xl sm:text-2xl font-bold py-5 px-10 sm:px-16 rounded-lg shadow-xl transition-all transform hover:scale-105 uppercase tracking-wide"
               >
-                Check Eligibility
+                Check My Eligibility
               </a>
 
               <p className="text-blue-300 text-xs mt-6 italic">
